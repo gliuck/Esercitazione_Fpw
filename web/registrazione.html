@@ -17,6 +17,29 @@ and open the template in the editor.
         
     </head>
     <body>
-        <div>TODO write content</div>
+         <div> <h1> Writing is easy! <a href="index.html"> go back </a> </h1> </div> <!--tornare in home, ma dentro home devo tornare alla pagina articoli -->
+       
+         <div> 
+             <!--Aggiungiuamo un Form -->
+             <!--  action= che richiesta di http devo fare, action significa che azione devo fare, è fondamementale usarlo-->
+             <form 
+                 action="index.html" method="post"> <!-- ci dev'essere sempre -->
+                 <!--ora aggiungo gli input -->
+                 <label for="id_nomeutente">Nome: </label> <!--metterlo uguale alla id -->
+             <input type="text" name="nomeUtente" id="id_nomeutente" 
+                    value="Mario Rossi"> <!--type ovvero il tipo di input , id dev'essere univoco nel file html, value ovvero il valore iniziare da far vedere all'utente-->
+             
+             <!--se voglio andare a capo uso  br -->
+             <br/>
+             <label for="id_username"> Username: </label>
+             <input type="text" name="usareName" id="id_username" value="username"> 
+             <input type="password" name="password" id="id_password" value="oscurato"> 
+             <br/>
+             <input type="submit" value="Sumbit"/>
+             
+             </form>
+             
+             
+         </div>
     </body>
 </html>
