@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-mar-2019, 9.35.15
+    Author     : nontenefrega
+*/
+
+/* */
+/*TASK 2*/
+body{ /*creo la mia regola *//* voglio scrivere le proprietà */
+ font-size: 14px;   /* 14pixel il font delle lettere*/
+ font-family: "Open Sans", Arial, sans-serif; /* il principale è open sans, gli altri dopo la virgola verranno usati come scorta in tal caso che il browser non supporti certi font*/
+ color:black;  /* Colore lettere*/ /* se ci viene chiesto di utilizzare n esadecimale, allora inseriamo il valore in esadecimale*/
+
+}
+
+/*TASK2*/
+/* id è unico, non possono essere uguali*/
+#logo {
+    background-color: #1c345a; /*  ho un rettangolo di questo colore di dimensione della mia imamgine*/
+    /* infatti richiama l' unico id identificato come logo (su registrazione) e va a modificare quello, in questo caso mette uno sfondo nero dietro l'immagine, e la dimentsione dello sfondo è relativa alla grandezza dell'immagine'*/
+}
+
+/*voglio lo sfondo bianco del testo header (writing easy sarà di color bianco)*/
+
+header,footer {    /*aggiungendo footer è la stessa cosa di scrivere footer come dopo, ma è molto più utile perche scriviamo regole in meno*/
+    color: white;
+    
+   
+}
+
+footer{
+    color:white; /*idem a prima voglio dare il colore al testo di footer scritto in registrazione.html */
+/* è quello che vado a scrivere a piè di pagina (essendo bianco per visualizzarlo lo devo selezioanare), quindi tutto il footer prende il colore bianco*/
+}
+/*TASK 3*/
+.Importante {
+    font-weight: bold /* qui sto andando a modificare una classe che ho creato in html, una volto che creo la classe poi posso modificare tutto quello che segue più semplicemnte,*/
+        /*In questo caso metto il titolo del form in grassetto*/
+}    /* . e poi inizia ad autocompletarsi, così da farci scegliere le classi*/ 
+
+
+/*Task 4*/ /* volendo possiamo scrivere anche così div#.. ma sapendo che l' id è univoco allora potrei lasciare solo #content'*/
+div#content h2{
+    color: #9e1616;
+    
+}
+
+/*TASK 5*/
+/* Se volessi cambiare tutti gli h un colore ? task5*/
+
+h1, h2, h3, h4, h5, h6{
+    color: #1c345a;
+}

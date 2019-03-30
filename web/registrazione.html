@@ -15,11 +15,33 @@ and open the template in the editor.
         <meta name="keywords" content="FPW, Progetto, HTML, CSS"> <!--utile inserire questi meta dati per risultare in cima alle ricerche di google. -->
         <meta name="description" content="Pagina registrazione della pagina FPW">
         
+        <link rel="stylesheet" type="text/css" href="style.css"
+      media="screen"> <!-- type sempre così, href scrivo il nome di dove si trova il file css(devo creare in web page un nuovo file css dal nome style -->
+        <!--va fatto questo su ogni pagina -->
     </head>
+    
+   <!-- -->
     <body>
-         <div> <h1> Writing is easy! <a href="index.html"> go back </a> </h1> </div> <!--tornare in home, ma dentro home devo tornare alla pagina articoli -->
+         <header> <h1> Writing is easy! <a href="index.html"> go back </a> </h1> 
+             <div id="logo"> <!--Specifico il logo, così quando lo richiamo nel stylecss, andrà a modificare il colore dietro l'immagine -->
+                 
+             <img title="Main Image" alt="Foto homepage codice arduino" src="img/homepage.png">
+             </div>
+                 
+         </header> <!--tornare in home, ma dentro home devo tornare alla pagina articoli -->
        
-         <div> 
+         <nav>
+              <h2> Lista Pagine </h2>
+       <ul> 
+           <!--voglio implementare una lista di link -->
+           <li><a href="http://google.com">Ti sei perso? </a> </li> <!-- a= ancora, href= collegati a.., li= lista -->
+           
+           <li><a href="articoli.html">Articoli</a></li> <!-- collegamento ad articoli -->
+           <li><a href="registrazione.html"> Registrazione</a></li>
+           
+       </ul>
+         </nav>
+             <main>
              <!--Aggiungiuamo un Form -->
              <!--  action= che richiesta di http devo fare, action significa che azione devo fare, è fondamementale usarlo-->
              <form 
@@ -33,13 +55,53 @@ and open the template in the editor.
              <br/>
              <label for="id_username"> Username: </label>
              <input type="text" name="usareName" id="id_username" value="username"> 
+             <br/>
+             <label for='password'> Password: </label>
              <input type="password" name="password" id="id_password" value="oscurato"> 
+             <br/>
+             <label for='scrittore'> Scrittore: </label>
+             <input type="radio" name="tipo utente" id="scrittore" value='scrittore'>  <!-- il value non lo vediamo, per ora non serve ma volendo può essere uguale all'id-->
+             <br/>
+             <label for='autore'> Autore </label> 
+             <input type="radio" name="tipo utente" id="Autore" value='Autore'> 
+             
+             <br/>  <!-- -->
+             
+              
+             <!--select= una nuova tag, mette un menù a tendina, tutti elementi in cui il tag è option, serve sempre value per leggere il codice che l'utente invia -->
+             <p class='Importante'> Colore preferito </p> <!--classe importante ci serve per  scrivere la regola di quella classe, così da poter modificare la classe e quindi tutto il codice di conseguenza, ad esempio lo voglio scrivere in grassetto -->
+             
+              <select>  <!-- se dovessi utilizzare select size=n, allora mi darebbe un menu a tendina, ma se sono meno di 15 conviene utilizzare il menu a scomparsa -->
+                  
+                  <option value='red '> Rosso </option>
+                  <option value='white '> Bianco </option>
+                  <option value='grey '> Grigio </option>
+                  <option value='yellow '> Giallo </option>
+                  <option value='green '> Verde </option>
+                  
+              </select>
+              
              <br/>
              <input type="submit" value="Sumbit"/>
              
              </form>
-             
-             
-         </div>
+             <!--Task 4 -->
+             <div id="content">
+                 <div>
+                     <h2> Prova_intermedia</h2> <!--Lui è un discendente non è un figlio, tutti gli h2 -->
+                 </div>
+                 <h2>Prova1</h2>
+                 <h2>Prova2</h2>
+                 <h2>Prova3</h2>
+                 <h2>Prova4</h2>
+                 <h2>Prova5</h2>
+             </div> 
+         
+       </main>
+         <footer> <!--lo richiama dopo nel css, kmq sia footer viene utilizzato  a piè di pagina per scrivre di solito l'autore del sito, oppure copyright etc -->
+             <p> Developed by Luca Lussu</p>
+         </footer>
     </body>
 </html>
+
+
