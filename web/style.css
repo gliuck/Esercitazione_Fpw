@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : nontenefrega
 */
 
-/* */
+/* 1esercizio css */
 /*TASK 2*/
 body{ /*creo la mia regola *//* voglio scrivere le proprietà */
  font-size: 14px;   /* 14pixel il font delle lettere*/
@@ -53,5 +53,21 @@ div#content h2{
 /* Se volessi cambiare tutti gli h un colore ? task5*/
 
 h1, h2, h3, h4, h5, h6{
+    color: #1c345a;
+}
+/*Task 6*/
+/*impostare il testo sottolineato o in grassetto nei link*/
+a:hover {
+    text-decoration: underline; /*sottolineato e in grassetto*/
+    font-weight: bold;
+    
+}
+
+/*Task 7*/
+
+/*voglio selezionare il valore di un attributo, (condizioni di attributo  slide 18)*/
+/*scelgo link su html, */
+
+a[href="index.html"]{ /*il link selezionato avrà un colore diverso*/
     color: #1c345a;
 }
